@@ -9,9 +9,9 @@
 }
 
 :root {
-    --accent-color: #86e3ff;
     --background-color: #303a53;
-    --bookend-color: #2e364d;
+    --accent-color: #86e3ff;
+    --accent-color-2: #ffe600;
 }
 
 html {
@@ -30,6 +30,7 @@ html {
 
 .container {
     padding: 10px 10%;
+    text-align: center;
 }
 
 .profile-picture {
@@ -97,22 +98,28 @@ span {
     flex-wrap: wrap;
 }
 
-.about-col-1 {
+.about-col-left {
     flex-basis: 35%;
 }
 
-.about-col-1 img {
-    width: 100%;
+.about-col-left img {
+    width: 80%;
     border-radius: 15px;
 }
 
 .about-col-2 {
     flex-basis: 60%;
+    text-align: left;
+}
+
+.about-col-2 p {
+    padding-bottom: 20px;
 }
 
 .sub-title {
-    font-size: 60px;
-    color: #fff;
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    padding-bottom: 50px;
 }
 
 .tab-titles {
@@ -123,6 +130,7 @@ span {
 .tab-links {
     margin-right: 50px;
     font-size: 1rem;
+    font-family: monospace;
     cursor: pointer;
     position: relative;
     background-color: var(--background-color);
@@ -130,7 +138,7 @@ span {
 }
 
 .tab-links:hover {
-    color:var(--accent-color);
+    color:var(--accent-color-2);
     transition: color 0.3s ease-in;
     text-decoration: underline;
 }
