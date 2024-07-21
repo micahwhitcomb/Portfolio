@@ -82,7 +82,7 @@ span {
     color: var(--accent-color);
 }
 
-/* ---------- ABOUT ---------- */
+/* -- ABOUT -- */
 
 #about {
     padding: 75px;
@@ -170,9 +170,9 @@ summary {
     padding-top: 16px;
 }
 
-/* ---------- SKILL SET ---------- */
+/*-- PROJECTS --*/
 
-#skills {
+#projects {
     padding: 30px 0;
     background-color: var(--background-color);
     background-size: cover;
@@ -214,98 +214,9 @@ summary {
     transform: translateY(-6px);
 }
 
-/*-- PROJECTS --*/
-
-
-#projects {
-    padding: 50px 0;
-    display: none;
-}
-
-.work-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-
-.work {
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-
-.work img {
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-}
-
-.layer {
-    width: 100%;
-    height: 0%;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), #664288);
-    border-radius: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 16px;
-    transition: height 0.4s;
-}
-
-.layer h3 {
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.layer a {
-    margin-top: 20px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: #241d1d;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
-}
-
-.layer a i {
-    color: var(--accent-color);
-}
-
-.work:hover .layer {
-    height: 100%;
-}
-
-.btn {
-    display: block; margin: 50px auto;
-    /*width: fit-content;*/
-    border: 3px solid var(--accent-color);
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background: var(--accent-color);
-    color: #000;
-}
 
 /*-- CONTACT --*/
 
-.contact-left {
-    flex-basis: 35%;
-}
 
 .contact-left p {
     margin-top: 30px;
@@ -330,49 +241,31 @@ summary {
 }
 
 .social-icons a i:hover {
-    color:#fae420;
+    color:var(--accent-color-2);
     transform: translateY(-5px);
 }
 
-.btn.btn2 {
-    display: inline-block;
-    border: 3px solid #f58327;
-    background: transparent;
+.btn {
+    display: block; margin: 50px auto;
+    width: fit-content;
+    border: 3px solid var(--accent-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
 }
 
-.btn2:hover {
+.btn:hover {
     background: var(--accent-color);
-    color: #000;
+    color: #222;
 }
 
-.contact-right {
-    flex-basis: 60%;
-}
 
 .contact-right form {
     width: 100%;
 }
 
-form input, form textarea {
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 6px;
-}
 
-form .btn2 {
-    padding: 14px 55px;
-    width: auto;
-    margin-left: 15px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
-}
 
 input:active, input:focus, textarea:active, textarea:focus {
   border: 1px solid #fff;
@@ -386,24 +279,19 @@ footer {
     text-align: center;
     padding: 25px 0;
     font-weight: 400;
-    background-color: #2e364d;
+    background-color: #262626;
     margin-top: 20px;
 }
 
-.footer a {
+footer a {
     margin-bottom: 15px;
     padding-bottom: 20px;
 
 }
 
-.footer p {
+footer p {
     margin-top: 15px;
     margin-bottom: 15px;
-}
-
-.references {
-    margin-top: 20px;
-    opacity: 25%;
 }
 
 /*----------- RESPONSIVE ------------*/
@@ -464,7 +352,4 @@ footer {
         align-items: baseline;
     }
 
-    hr {
-        overflow: hidden;
-    }
 }
