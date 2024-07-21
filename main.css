@@ -16,7 +16,7 @@
 
 html {
     background-color: var(--background-color);
-    font-size: 18px;
+    font-size: 24px;
 }
 
 #header {
@@ -32,9 +32,9 @@ html {
     padding: 10px 10%;
 }
 
-.logo {
+.profile-picture {
     width: 280px;
-    border-radius: 20px;
+    border-radius: 50%;
 }
 
 nav {
@@ -42,31 +42,30 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: var(--bookend-color);
-    border-radius: 20px;
 }
 
 nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    padding-right: 50px;
 }
 
 nav ul li a {
     text-decoration: none;
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
 nav ul li a::after {
     content: '';
     width: 0;
-    height: 3px;
+    height: 4px;
     background: var(--accent-color);
     position: absolute;
     left: 0;
     bottom: -6px;
-    transition: 0.3s;
+    transition: 0.25s;
 }
 
 nav ul li a:hover::after {
@@ -75,7 +74,7 @@ nav ul li a:hover::after {
 
 .header-intro {
     margin-top: 10%;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 span {
