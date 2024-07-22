@@ -1,0 +1,102 @@
+<!-- GAME_SURVEY_FORM -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Game Survey Form</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link rel="stylesheet" type="text/css" href="game_survey_style.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="main-block">
+        <h1>Game Survey</h1>
+        <p>Below is a survey form for your game-playing preferences.</p>
+
+<!-- THE FORM -->
+
+        <form action="index.html" method="POST">
+            <section class="personal">
+                <label for="name">First Name: </label>
+                <input id="name" type="text">
+                <br>
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="date-of-birth">
+            </section>
+            <br>
+        
+            <section class="range-of-occurence">
+                <label for="often">How often do you play games?</label>
+                <br>
+                <span>Rarely</span>
+                <input type="range" name="often" id="frequency" value="3" min="1" max="7">
+                <span>Often</span>
+            </section>
+            <br>
+        
+            <section class="types-of-games">
+                <span>What game types do you enjoy? (Select all that apply)</span>
+                <br>
+                <input type="checkbox" name="type-of" id="card" value="card">
+                <label for="card">Card</label>
+                <input type="checkbox" name="type-of" id="video" value="video">
+                <label for="video">Video</label>
+                <input type="checkbox" name="type-of" id="board" value="board">
+                <label for="board">Board</label>
+                <input type="checkbox" name="type-of" id="party" value="party">
+                <label for="party">Party</label>
+                <input type="checkbox" name="type-of" id="yard" value="yard">
+                <label for="yard">Yard</label>
+                <input type="checkbox" name="type-of" id="social" value="social">
+                <label for="social">Social</label>
+            </section>
+            <br>
+        
+            <section class="level-of-interest">
+                <span>What do you typically find most interesting with games?</span>
+                <br>
+                <input type="radio" name="interest" id="strategy" value="strategy">
+                <label for="strategy">Strategy</label>
+                <input type="radio" name="interest" id="competition" value="competition">
+                <label for="competition">Competition</label>
+                <input type="radio" name="interest" id="community" value="community">
+                <label for="community">Community</label>
+            </section>
+            <br>
+    
+            <section class="time-frame">
+                <label for="time">What is your ideal length of time for a game?</label>
+                <select name="time" id="time">
+                    <option value="select">Select</option>
+                    <option value="5">5 min or less</option>
+                    <option value="10">10 min</option>
+                    <option value="15-20">15-20 min</option>
+                    <option value="30">30 min</option>
+                    <option value="45+">45+ min</option>
+                </select>
+            </section>
+            <br>
+    
+            <section class="player-count">
+                <label for="amount">What is the ideal amount of players for a game?</label>
+                <input type="number" name="amount" id="amount">
+            </section>
+            <br>
+        
+            <section class="extra-info">
+                <label for="extra">Comment your favorite game you enjoy playing</label>
+                <br>
+                <textarea id="extra" name="extra" rows="8" cols="50"></textarea>
+            </section>
+
+            <p>Thank you for completing the survey!</p>
+
+            <section class="submission">
+                <input type="submit" value="Submit">
+            </section>
+        </form>
+    </div>
+  </body>
+</html>
