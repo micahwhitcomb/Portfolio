@@ -17,7 +17,7 @@
 
 <!-- THE FORM -->
 
-        <form action="index.html" method="POST">
+        <form id="survey-form" action="index.html" method="POST">
             <section class="personal">
                 <label for="name">First Name: </label>
                 <input id="name" type="text">
@@ -90,13 +90,16 @@
                 <br>
                 <textarea id="extra" name="extra" rows="8" cols="50"></textarea>
             </section>
-
-            <p>Thank you for completing the survey!</p>
-
             <section class="submission">
                 <input type="submit" value="Submit">
             </section>
         </form>
     </div>
+    <script>
+        document.getElementById('survey-form').addEventListener('submit', function(event) {
+          event.preventDefault();  // Prevent the default form submission
+          alert('Thank you for completing the survey!');  // Display the thank you message
+        });
+      </script>
   </body>
 </html>
