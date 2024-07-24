@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="piano.css">
+</head>
+
+<body>
+  <p class='title'>Piano Demo</p>
+  <p class='instructions'>Click the piano keys to view the notes on the staff.</p>
+  <section class="piano">
+    <!-- First Octave -->
+    <section id='c1-key' class="key"></section>
+    <section id='c-sharp1-key' class="black-key"></section>
+    <section id='d1-key' class="key"></section>
+    <section id='d-sharp1-key' class="black-key"></section>
+    <section id='e1-key' class="key"></section>
+    <section id='f1-key' class="key"></section>
+    <section id='f-sharp1-key' class="black-key"></section>
+    <section id='g1-key' class="key"></section>
+    <section id='g-sharp1-key' class="black-key"></section>
+    <section id='a1-key' class="key"></section>
+    <section id='a-sharp1-key' class="black-key"></section>
+    <section id='b1-key' class="key"></section>
+    <section id='c2-key' class="key"></section>
+    <!-- Second Octave -->
+    <section id='c-sharp2-key' class="black-key"></section>
+    <section id='d2-key' class="key"></section>
+    <section id='d-sharp2-key' class="black-key"></section>
+    <section id='e2-key' class="key"></section>
+    <section id='f2-key' class="key"></section>
+    <section id='f-sharp2-key' class="black-key"></section>
+    <section id='g2-key' class="key"></section>
+    <section id='g-sharp2-key' class="black-key"></section>
+    <section id='a2-key' class="key"></section>
+    <section id='a-sharp2-key' class="black-key"></section>
+    <section id='b2-key' class="key"></section>
+    <section id='c3-key' class="key"></section>
+  </section>
+
+  <div id="middle-C">
+    <img src="up-arrow.png"></img>
+    <p>Middle 'C'</p>
+  </div>
+  <div id="music-staff-top" class="staff-container">
+    <img src="treble-clef.png" class="clef treble" alt="Treble Clef" width="75px">
+    <p class="staff-lines">________________________________________________________________</p>
+    <p class="staff-lines">________________________________________________________________</p>
+    <p class="staff-lines">________________________________________________________________</p>
+    <p class="staff-lines">________________________________________________________________</p>
+    <p class="staff-lines">________________________________________________________________</p>
+  </div>
+  <div id="music-staff-bottom" class="staff-container">
+    <img src="bass-clef.png" class="clef bass" alt="Bass Clef" width="75px">
+    <p class="staff-lines">________________________________________________________________</p>
+    <p class="staff-lines">________________________________________________________________</p>
+    <p class="staff-lines">________________________________________________________________</p>
+    <p class="staff-lines">________________________________________________________________</p>
+    <p class="staff-lines">________________________________________________________________</p>
+  </div>
+  <img src="sharp.png" class="played-note sharp hidden" alt="sharp note">
+  <img src="whole-note.png" class="played-note whole-note hidden" alt="whole note">
+  <div id="note-line" class="played-note sharp whole-note hidden"></div>
+  <script  src="piano.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+/* Piano Keys Stylesheet */
+
+:root {
+  --background: #fee9ff;
+  --main-text: #5800aa;
+  --piano-dark: #141c3a;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: var(--background);
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .title {
+    font-size: 40px;
+    font-family: monospace;
+    color: var(--main-text);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+
+  .instructions {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 45px;
+    color: var(--main-text);
+    letter-spacing: 1px;
+  }
+
+  .piano {
+    width: 305px;
+    height: 210px;
+    display: inline;
+  }
+
+  .key {
+    width: 30px;
+    height: 200px;
+    display: inline-block;
+    border: solid #141c3a 2px;
+    border-radius: 3px;
+    background-color: white;
+    color: var(--piano-dark);
+  }
+  .black-key {
+    width: 25px;
+    height: 100px;
+    display: inline-block;
+    border: solid #141c3a 2px;
+    border-radius: 3px;
+    background-color: var(--piano-dark);
+    color: white;
+    position: absolute;
+    margin-left: -12px;
+    padding: 0px;
+  }
+
+  #middle-C {
+    text-align: center;
+    height: 100px;
+    font-size: 24px;
+    color: var(--main-text);
+    letter-spacing: 1px;
+    z-index: -1;
+  }
+
+  div img {
+    position: relative;
+    top: -35px;
+  }
+
+  #middle-C p {
+    position: relative;
+    bottom: 100px;
+  }
+
+  .staff-lines {
+    margin: 3px;
+    font-weight: bold;
+  }
+
+  .staff-container {
+    position: relative;
+    bottom: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -2;
+  }
+
+  .clef {
+    position: relative;
+    right: 230px;
+    top: 150px;
+    z-index: 1;
+  }
+
+  .treble {
+    height: 142px;
+  }
+
+#music-staff-bottom {
+  position: relative;
+  bottom: 230px;
+}
+
+  .bass {
+    position: relative;
+    height: 95px;
+    top: 115px;
+  }
+
+  .played-note {
+    height: 36px;
+    position: relative;
+    bottom: 0px;
+  }
+
+  #note-line {
+    width: 150px;
+    height: 2px;
+    left: 45%;
+    background-color: var(--piano-dark);
+    bottom: 395px;
+  }
+
+  .hidden {
+    display: none;
+  }
+ 
