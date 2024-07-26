@@ -77,6 +77,10 @@ span {
     color: var(--accent-color);
 }
 
+.header-intro span:hover {
+    text-shadow: 0 0 10px var(--accent-color);
+}
+
 /* -- ABOUT -- */
 
 #about {
@@ -93,17 +97,17 @@ span {
     flex-basis: 35%;
 }
 
-.about-col-left img {
+.family {
     width: 80%;
     border-radius: 15px;
 }
 
-.about-col-2 {
+.about-col-right {
     flex-basis: 60%;
     text-align: left;
 }
 
-.about-col-2 p {
+.about-col-right p {
     padding-bottom: 20px;
 }
 
@@ -138,8 +142,12 @@ span {
     width: 90%;
 }
 
+.tab-contents ul {
+    padding: 0;
+}
+
 .tab-contents ul li {
-    list-style-type: none;
+    list-style-type:none;
     margin: 10px 0;
 }
 
@@ -260,7 +268,6 @@ footer {
     padding: 25px 0;
     font-weight: 400;
     background-color: #272727;
-    margin-top: 20px;
 }
 
 footer a {
@@ -276,20 +283,14 @@ footer p {
 
 /*----------- RESPONSIVE ------------*/
 
-@media only screen and (min-width: 601px) and (max-width: 979px){
-
-    nav ul {
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-   }
-   
-   .profile-picture {
-    width: 50%;
-    margin-bottom: 10px;
-    }
-}
+/*SMALL*/
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
+    
+    .container {
+        margin: 30px 10px;
+        padding: 0;
+    }
     
     nav {
         display: flex;
@@ -314,7 +315,7 @@ footer p {
     }
 
     .profile-picture {
-        width: 150px;
+        width: 200px;
     }
     
     .header-intro {
@@ -325,21 +326,26 @@ footer p {
         height: 90vh;
     }
 
-    .sub-title {
-        font-size: 32px;
-        margin-bottom: 15px;
-    }
-
     .row {
         flex-direction: column;
     }
 
-    img.about-icon {
-        width: 50%;
+    #about {
+        margin: 0;
+        padding: 0;
     }
 
-    .about-col-2 {
-        width: 90%;
+    .sub-title {
+        font-size: 2rem;
+        padding-bottom: 0px;
+    }
+
+    .family {
+        width: 200px;
+    }
+
+    .about-col-right p {
+        font-size: 0.75rem;
     }
 
     .tab-titles {
@@ -347,4 +353,35 @@ footer p {
         align-items: baseline;
     }
 
+    .tab-contents ul {
+        padding: 0;
+        font-size: 0.75rem;
+    }
+
+    summary {
+        font-size: 0.75rem
+    }
+
+
+    .contact-info p {
+        font-size: 0.75rem;;
+    }
+
+    footer {
+        font-size: 0.75rem;
+    }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 979px){
+
+    nav ul {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+   }
+   
+   .profile-picture {
+    width: 50%;
+    margin-bottom: 10px;
+    }
 }
