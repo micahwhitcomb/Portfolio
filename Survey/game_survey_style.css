@@ -42,5 +42,44 @@ body {
     margin-right: 25px;
   }
 
+  @media only screen and (min-width: 320px) and (max-width: 600px) {
+
+
+    label, textarea, #frequency {
+      margin: 0px;
+    }
+
+    body:not([h1]) {
+      font-size: 0.75rem;
+      padding: 0;
+    }
+
+    #name {
+      margin: 0;
+    }
+
+    .range-of-occurence {
+      display: grid;
+      grid-template-columns: 3fr;
+    }
+
+    .rarely {
+      text-align: left;
+    }
+
+    .often {
+      text-align: right;
+    }
+
+    .game-type-box {
+      padding: 0 10px;
+    }
+
+    .game-type-box input{
+      margin: 0;
+    }
+  
+  }
+
 
   

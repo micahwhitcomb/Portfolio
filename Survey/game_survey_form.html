@@ -30,27 +30,30 @@
             <section class="range-of-occurence">
                 <label for="often">How often do you play games?</label>
                 <br>
-                <span>Rarely</span>
+                <span class="rarely">Rarely</span>
                 <input type="range" name="often" id="frequency" value="3" min="1" max="7">
-                <span>Often</span>
+                <span class="often">Often</span>
             </section>
             <br>
         
             <section class="types-of-games">
                 <span>What game types do you enjoy? (Select all that apply)</span>
                 <br>
-                <input type="checkbox" name="type-of" id="card" value="card">
-                <label for="card">Card</label>
-                <input type="checkbox" name="type-of" id="video" value="video">
-                <label for="video">Video</label>
-                <input type="checkbox" name="type-of" id="board" value="board">
-                <label for="board">Board</label>
-                <input type="checkbox" name="type-of" id="party" value="party">
-                <label for="party">Party</label>
-                <input type="checkbox" name="type-of" id="yard" value="yard">
-                <label for="yard">Yard</label>
-                <input type="checkbox" name="type-of" id="social" value="social">
-                <label for="social">Social</label>
+                <div class="game-type-box">
+                    <input type="checkbox" name="type-of" id="card" value="card">
+                    <label for="card">Card</label>
+                    <input type="checkbox" name="type-of" id="video" value="video">
+                    <label for="video">Video</label>
+                    <input type="checkbox" name="type-of" id="board" value="board">
+                    <label for="board">Board</label>
+                    <input type="checkbox" name="type-of" id="party" value="party">
+                    <label for="party">Party</label>
+                    <input type="checkbox" name="type-of" id="yard" value="yard">
+                    <label for="yard">Yard</label>
+                    <input type="checkbox" name="type-of" id="social" value="social">
+                    <label for="social">Social</label>
+                </div>
+                
             </section>
             <br>
         
@@ -88,7 +91,7 @@
             <section class="extra-info">
                 <label for="extra">Comment your favorite game you enjoy playing</label>
                 <br>
-                <textarea id="extra" name="extra" rows="8" cols="50"></textarea>
+                <textarea id="extra" name="extra" rows="6" cols="40"></textarea>
             </section>
             <section class="submission">
                 <input type="submit" value="Submit">
@@ -97,8 +100,8 @@
     </div>
     <script>
         document.getElementById('survey-form').addEventListener('submit', function(event) {
-          event.preventDefault();  // Prevent the default form submission
-          alert('Thank you for completing the survey!');  // Display the thank you message
+          event.preventDefault();
+          alert('Thank you for completing the survey!');
         });
       </script>
   </body>
