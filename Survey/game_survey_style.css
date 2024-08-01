@@ -42,6 +42,8 @@ body {
     margin-right: 25px;
   }
 
+/* RESPONSIVE - SMALL */
+
   @media only screen and (min-width: 320px) and (max-width: 600px) {
 
 
@@ -77,6 +79,14 @@ body {
 
     .game-type-box input{
       margin: 0;
+    }
+
+    .options input {
+      margin: 0;
+    }
+
+    .options label {
+      margin: 0 0 0 5px;
     }
   
   }
