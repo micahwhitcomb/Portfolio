@@ -31,3 +31,7 @@ const giraffeCard = new PlayingCard ('Giraffe', 'Plains', 4);
 const rhinoCard = new PlayingCard ('Rhinoceros', 'Plains', 3);
 
 const gazelleCard = new PlayingCard ('Gazelle', 'Plains', 2);
+
+const tigerCard = new PlayingCard ('Tiger', 'Jungle', 5);
+
+const gorillaCard = new PlayingCard ('Gorilla', 'Jungle', 4);
