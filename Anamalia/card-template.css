@@ -1,0 +1,13 @@
+/* TEMPLATE */
+
+:root {
+    --main-background: #24253d;
+    --plain: #f8c024;
+    --jungle: #6adb01;
+    --water: #0182ec;
+}
+
+body {
+    background-color: var(--main-background);
+    box-sizing: border-box;
+}
