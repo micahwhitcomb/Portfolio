@@ -151,6 +151,11 @@ span {
     text-decoration: underline;
 }
 
+#education a:hover {
+    color:var(--accent-color-2);
+    transition: color 0.3s ease-in;
+}
+
 .tab-links.active-link::after {
     width: 90%;
 }
