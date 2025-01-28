@@ -181,11 +181,36 @@ span {
     display: block;
 }
 
-summary {
+details {
     border-top: 2px solid #fff;
     margin-top: 20px;
     padding-top: 16px;
 }
+
+details[open] > summary {
+    list-style-type: '- ';
+  }
+
+  summary {
+    list-style-type: '+ ';
+  }
+
+  details p {
+    opacity: 0;
+  }
+
+  details[open] p {
+    animation: fadeIn .85s linear forwards;
+  }
+
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
 
 /*-- PROJECTS --*/
 
