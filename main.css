@@ -355,7 +355,7 @@ footer p {
     }
 
     nav ul li a {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 
     .profile-picture {
@@ -376,7 +376,7 @@ footer p {
 
     #about {
         margin: 0;
-        padding: 0;
+        padding: 50px;
     }
 
     .sub-title {
@@ -389,21 +389,25 @@ footer p {
     }
 
     .about-col-right p {
-        font-size: 0.75rem;
+        font-size: 1.2rem;
     }
 
     .tab-titles {
-        flex-direction: column;
-        align-items: baseline;
+        flex-direction: flex;
+        justify-content: space-around;
+    }
+
+    .tab-links {
+        font-size: 1.2rem;
     }
 
     .tab-contents ul {
         padding: 0;
-        font-size: 0.75rem;
+        font-size: 1.2rem;
     }
 
     summary {
-        font-size: 0.75rem;
+        font-size: 1.2rem;
     }
 
     .projects-list div h2 {
