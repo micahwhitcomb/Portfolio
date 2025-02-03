@@ -32,10 +32,9 @@ html {
 }
 
 #header {
-    width: 100%;
+    
     height: 100vh;
-    padding: 10px 0 0 0;
-    background-color: var(--background-color);
+    padding: 0;
 }
 
 .container {
@@ -91,8 +90,7 @@ nav ul li a:hover::after {
 }
 
 .header-intro {
-    margin-top: 10%;
-    font-size: 1.25rem;
+    margin-top: 15%;
 }
 
 span {
@@ -113,16 +111,6 @@ span {
 .row {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.about-col-left {
-    flex-basis: 35%;
-}
-
-.family {
-    width: 80%;
-    border-radius: 15px;
 }
 
 .about-col-right {
@@ -131,7 +119,8 @@ span {
 }
 
 .about-col-right p {
-    padding-bottom: 20px;
+    padding: 5px 7px 20px 7px;
+    line-height: 1.5rem;
 }
 
 .sub-title {
@@ -147,7 +136,6 @@ span {
 
 .tab-links {
     margin-right: 50px;
-    font-size: 1.1rem;
     cursor: pointer;
     position: relative;
     background-color: var(--background-color);
@@ -180,6 +168,7 @@ span {
 .tab-contents ul li {
     list-style-type:none;
     margin: 10px 0;
+    font-size: 0.80rem;
 }
 
 .tab-contents ul li span {
@@ -207,6 +196,7 @@ details[open] > summary {
 
   summary {
     list-style-type: '+ ';
+    font-size: 1rem;
   }
 
   details p {
@@ -229,11 +219,11 @@ details[open] > summary {
 /*-- PROJECTS --*/
 
 #projects {
-    padding: 30px 0;
+    padding: 75px 0;
     background-color: var(--background-color);
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color: var(--background-color);
 }
 
 .projects-list {
@@ -348,9 +338,20 @@ footer p {
 
 @media only screen and (min-width: 320px) and (max-width: 1400px) {
     
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
     .container {
         margin: 30px 10px;
         padding: 0;
+    }
+
+    #header {
+        height: max-content;
+        padding-bottom: 210px;
     }
     
     nav {
@@ -380,11 +381,7 @@ footer p {
     }
     
     .header-intro {
-        font-size: .75rem;
-    }
-
-    #header {
-        height: 90vh;
+        font-size: 0.75rem;
     }
 
     .row {
@@ -393,38 +390,39 @@ footer p {
 
     #about {
         margin: 0;
-        padding: 50px;
+        padding: 0;
     }
 
     .sub-title {
         font-size: 2rem;
-        padding-bottom: 0px;
     }
 
-    .family {
-        width: 200px;
-    }
-
-    .about-col-right p {
-        font-size: 1.2rem;
+    .about-col-right {
+        text-align: center;
+        font-size: .80rem;
     }
 
     .tab-titles {
-        flex-direction: flex;
         justify-content: space-around;
+
     }
 
     .tab-links {
-        font-size: 1.2rem;
+        font-size: .75rem;
+        margin: 0;
+        padding: 5px;
+        background-color: var(--text-color);
+        color:var(--background-color);
+        border-radius: 4px;
     }
 
     .tab-contents ul {
         padding: 0;
-        font-size: 1.2rem;
+        font-size: 0.75rem;
     }
 
     summary {
-        font-size: 1.2rem;
+        font-size: 0.75rem;
     }
 
     .projects-list div h2 {
@@ -439,5 +437,4 @@ footer p {
     footer {
         font-size: 0.75rem;
     }
-
 }
