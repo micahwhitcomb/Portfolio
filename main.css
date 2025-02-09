@@ -113,12 +113,29 @@ span {
     justify-content: space-around;
 }
 
-.about-col-right {
+.about-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about-icons img {
+    width: 60px;
+}
+
+.about-icons img {
+    width: 60px;
+}
+
+figcaption {
+    font-size: .75rem;
+}
+
+.about-content {
     flex-basis: 60%;
     text-align: left;
 }
 
-.about-col-right p {
+.about-content p {
     padding: 5px 7px 20px 7px;
     line-height: 1.5rem;
 }
@@ -436,5 +453,24 @@ footer p {
 
     footer {
         font-size: 0.75rem;
+    }
+}
+
+/* ------ BIG SCREENS over 1400px ------ */
+
+@media only screen and (min-width: 1400px) {
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-icons {
+        display: flex;
+        justify-content: center;
+    }
+    
+    button.tab-links {
+        font-size: 1rem;
     }
 }
