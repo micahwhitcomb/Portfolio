@@ -38,6 +38,7 @@ keys.forEach(function(key){
 
 // Function for clicking the piano notes.
 function keyPlay(event) {
+  event.preventDefault();
   event.target.style.backgroundColor = '#20ff02'; // Makes piano key green.
 
   const wholeNote = document.querySelector('.whole-note');
@@ -74,6 +75,10 @@ function keyRelease(event) {
 function keyEventMaker(note) {
   note.addEventListener('mousedown', keyPlay);
   note.addEventListener('mouseup', keyRelease);
+  note.addEventListener('mouseleave', keyRelease);
+  note.addEventListener('touchstart', keyPlay, { passive: false });
+  note.addEventListener('touchend', keyRelease);
+  note.addEventListener('touchcancel', keyRelease);
 }
 
 // A for-each loop iterating through the keys & positions.
