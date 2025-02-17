@@ -162,7 +162,7 @@ figcaption {
 .tab-links:hover {
     background-color: var(--text-color);
     color:var(--background-color);
-    border-radius: 12px;
+    border-radius: 4px;
 }
 
 #education a {
