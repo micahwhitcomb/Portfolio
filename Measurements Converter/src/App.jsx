@@ -33,9 +33,6 @@ function App() {
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
-        <p>
-          Welcome to Micah's web application - let's hope everything works properly!
-        </p>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
