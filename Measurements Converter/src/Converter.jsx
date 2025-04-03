@@ -40,9 +40,9 @@ function Converter() {
 
     // RENDERING
     return (
-        <div className="min-h-screen bg-blue-200 flex items-center justify-center p-4">
-            <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
-                <h1 className="text-2xl font-bold text-gray-800 text-center mb-4">Distance Converter</h1>
+        <div className="min-h-screen bg-stone-700 flex items-center justify-center p-4">
+            <div className="bg-green-200 p-6 rounded-lg shadow-md w-full max-w-md">
+                <h1 className="text-2xl font-bold text-gray-900 text-center mb-4">Distance Converter</h1>
                 <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
                     <input
                         type="number"
@@ -53,7 +53,7 @@ function Converter() {
                             convert(newValue);
                         }}
                         placeholder="Enter Value"
-                        className="border border-gray-300 p-2 rounded w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="border border-stone-700 p-2 rounded w-full focus:outline-none focus:ring focus:ring-green-600 no-spinners"
                     />
                     <select 
                         value={starter} 
@@ -61,7 +61,7 @@ function Converter() {
                             setStarter(e.target.value);
                             convert();
                             }}
-                        className="border border-gray-300 p-2 rounded w-full"
+                        className="border border-stone-700 p-2 rounded w-full"
                     >
                         <option value="inches">Inches</option>
                         <option value="centimeters">Centimeters</option>
@@ -70,14 +70,14 @@ function Converter() {
                         <option value="miles">Miles</option>
                         <option value="kilometers">Kilometers</option>
                     </select>
-                    <span className="self-center text-gray-600"> to </span>
+                    <span className="self-center text-gray-900"> to </span>
                     <select 
                         value={ender} 
                         onChange={(e) => {
                             setEnder(e.target.value);
                             convert()
                             }}
-                        className="border border-gray-300 p-2 rounded w-full"
+                        className="border border-stone-700 p-2 rounded w-full"
                     >
                         <option value="inches">Inches</option>
                         <option value="centimeters">Centimeters</option>
@@ -87,7 +87,7 @@ function Converter() {
                         <option value="kilometers">Kilometers</option>
                     </select>
                 </div>
-                <p className="mt-4 text-lg text-gray-700 text-center">Result: {result} </p>
+                <p className="mt-4 text-lg font-semibold text-gray-900 text-center">Result: {result} </p>
             </div>
         </div>
     );
