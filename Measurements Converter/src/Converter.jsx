@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import './index.css';
+import reactLogo from './assets/react.svg';    // Adjust filenames if different
+import viteLogo from './assets/vite.svg';
+import tailwindLogo from './assets/tailwindcss.svg';
 
 function Converter() {
     const [value, setValue] = useState('');
@@ -40,8 +43,9 @@ function Converter() {
 
     // RENDERING
     return (
-        <div className="min-h-screen bg-stone-700 flex items-center justify-center p-4">
-            <div className="bg-green-200 p-6 rounded-lg shadow-md w-full max-w-md">
+        <div className="min-h-screen bg-stone-700 flex flex-col items-center justify-center p-4">
+
+            <div className="bg-green-200 p-6 rounded-lg shadow-md w-full max-w-md mb-25">
                 <h1 className="text-2xl font-bold text-gray-900 text-center mb-4">Distance Converter</h1>
                 <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
                     <input
@@ -88,6 +92,14 @@ function Converter() {
                     </select>
                 </div>
                 <p className="mt-4 text-lg font-semibold text-gray-900 text-center">Result: {result} </p>
+            </div>
+            <div className="w-full max-w-md">
+                <h2 className="text-xl font-semibold text-white text-center">Technologies Used</h2>
+                <div className="flex justify-center space-x-6 mt-4">
+                    <img src={reactLogo} alt="React" className="h-10" />
+                    <img src={viteLogo} alt="Vite" className="h-10" />
+                    <img src={tailwindLogo} alt="Tailwind CSS" className="h-10" />
+                </div>
             </div>
         </div>
     );
