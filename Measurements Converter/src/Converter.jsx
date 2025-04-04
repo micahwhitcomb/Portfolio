@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import './index.css';
-import reactLogo from './assets/react.svg';
-import viteLogo from './assets/vite.svg';
-import tailwindLogo from './assets/tailwindcss.svg';
+import reactLogo from '/react.svg';
+import viteLogo from '/vite.svg';
+import tailwindLogo from '/tailwindcss.svg';
 
 function Converter() {
     const [value, setValue] = useState('');
