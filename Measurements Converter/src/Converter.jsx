@@ -1,14 +1,8 @@
 import { useState } from 'react';
 import './index.css';
-<<<<<<< HEAD
-import reactLogo from '/react.svg';
-import viteLogo from '/vite.svg';
-import tailwindLogo from '/tailwindcss.svg';
-=======
-import reactLogo from './assets/react.svg';    // Adjust filenames if different
+import reactLogo from './assets/react.svg';
 import viteLogo from './assets/vite.svg';
 import tailwindLogo from './assets/tailwindcss.svg';
->>>>>>> parent of 1b96146 (updated react logo fix)
 
 function Converter() {
     const [value, setValue] = useState('');
