@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './index.css';
-import reactLogo from './assets/react.svg';    // Adjust filenames if different
+import reactLogo from './assets/react.svg';
 import viteLogo from './assets/vite.svg';
 import tailwindLogo from './assets/tailwindcss.svg';
 
