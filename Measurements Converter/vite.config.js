@@ -9,5 +9,12 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss()],
-    base: './measurements-converter/',
+    base: './',
+    build: {
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name]-[hash][extname]',
+      },
+    },
+  },
 });
