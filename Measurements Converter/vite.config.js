@@ -9,9 +9,5 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss()],
-    base: '/Portfolio/measurements-converter/',
-    content: ['./src/**/*.{js,jsx}'],
-    build: {
-      assetsInlineLimit: 0,
-    },
+    base: './measurements-converter/',
 });
