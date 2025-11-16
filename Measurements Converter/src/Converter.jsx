@@ -10,6 +10,15 @@ function Converter() {
     const [ender, setEnder] = useState('centimeters');
     const [result, setResult] = useState('');
 
+    const toMeters = {
+        inches: 0.0254,
+        centimeters: 0.01,
+        feet: 0.3048,
+        meters: 1,
+        miles: 1609.34,
+        kilometers: 1000,
+    };
+
     // LOGIC
     const convert = (newValue = value) => {
         if (!newValue) {
@@ -17,26 +26,9 @@ function Converter() {
             return;
         }
     
-
         const userNum = parseFloat(newValue);
-        let endingValue;
-
-        if (starter === 'inches' && ender === 'centimeters') {
-            endingValue = userNum * 2.54;
-        } else if (starter === 'centimeters' && ender === 'inches') {
-            endingValue = userNum / 2.54;
-        } else if (starter === 'feet' && ender === 'meters') {
-            endingValue = userNum * 0.3048;
-        } else if (starter === 'meters' && ender === 'feet') {
-            endingValue = userNum / 0.3048;
-        } else if (starter === 'miles' && ender === 'kilometers') {
-            endingValue = userNum * 1.60934;
-        } else if (starter === 'kilometers' && ender === 'miles') {
-            endingValue = userNum / 1.60934;
-        } else {
-            endingValue = userNum;
-        }
-
+        const valueInMeters = userNum * toMeters[starter];
+        const endingValue = valueInMeters / toMeters[ender];
         setResult(endingValue.toFixed(2));
     };
 
